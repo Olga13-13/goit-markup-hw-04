@@ -515,12 +515,15 @@ body {
     margin-right: 300px;
     margin-bottom: 50px;
 }
-.portfolio-filters{}
+.portfolio-filters{
+    
+}
 
 
 .filters {
     border-radius: 4px;
     border: none;
+    border: 1px solid #EEEEEE;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -534,6 +537,8 @@ body {
 .filters:focus {
     background-color: var(--accent-color);
     color: var(--secondary-text-color-theme-light);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: #2196F3;
 }
 
 /* =========== /PORTFOLIO-FILTERS ===========*/
@@ -544,9 +549,25 @@ body {
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
-    justify-content: space-between;
+    justify-content: space-between;  
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+
+
+.portfolio-box {
+    box-sizing: border-box; 
+}
+
+
+.portfolio-box:hover,
+.portfolio-box:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 
 .portfolio-box-mini {
     padding-top: 20px;
